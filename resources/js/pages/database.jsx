@@ -118,6 +118,7 @@ const Database = ({ production_logs, operators, machines }) => {
                                     <th className="border px-4 py-2">Shift</th>
                                     <th className="border px-4 py-2">Produced</th>
                                     <th className="border px-4 py-2">Scrap</th>
+                                    <th className="border px-4 py-2">Downtime</th>
                                     <th className="border px-4 py-2">Log Date</th>
                                 </tr>
                             </thead>
@@ -130,6 +131,7 @@ const Database = ({ production_logs, operators, machines }) => {
                                         <td className="border px-4 py-2">{production_log.shift}</td>
                                         <td className="border px-4 py-2">{production_log.units_produced}</td>
                                         <td className="border px-4 py-2">{production_log.scrap_units}</td>
+                                        <td className="border px-4 py-2">{production_log.downtime}</td>
                                         <td className="border px-4 py-2">{production_log.log_date}</td>
                                     </tr>
                                 ))}
