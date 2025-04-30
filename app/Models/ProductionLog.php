@@ -35,9 +35,4 @@ class ProductionLog extends Model
     {
         return $this->belongsTo(Operator::class);
     }
-
-    public function aiInsights()
-    {
-        return $this->morphMany(AiInsight::class, 'related', 'related_model', 'related_id');
-    }
 }

@@ -16,8 +16,8 @@ class MachinesSeeder extends Seeder
         // User::factory(10)->create();
 
         DB::table('machines')->insert([
-            ['production_line_id' => 1, 'name' => 'Cutter 01', 'type' => 'Cutter', 'serial_number' => 'SN-00123', 'status' => 'operational', 'created_at' => now(), 'updated_at' => now()],
-            ['production_line_id' => 2, 'name' => 'Packer 01', 'type' => 'Packer', 'serial_number' => 'SN-00456', 'status' => 'downtime', 'created_at' => now(), 'updated_at' => now()],
+            ['production_line_id' => 1, 'name' => 'Cutter 01', 'type' => 'Cutter', 'serial_number' => 'SN-00123', 'status' => 'operational', 'capacity' => '1200', 'created_at' => now(), 'updated_at' => now()],
+            ['production_line_id' => 2, 'name' => 'Packer 01', 'type' => 'Packer', 'serial_number' => 'SN-00456', 'status' => 'downtime', 'capacity' => '1000', 'created_at' => now(), 'updated_at' => now()],
         ]);
     }
 }

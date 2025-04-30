@@ -23,8 +23,8 @@ class ProductionLogsSeeder extends Seeder
         ];
         $maxCapacity = [1 => 1200, 2 => 1000];
 
-        $startDate = Carbon::create(2025, 4, 1);
-        $endDate = Carbon::create(2025, 4, 30);
+        $startDate = Carbon::create(2025, 5, 1);
+        $endDate = Carbon::create(2025, 5, 31);
 
         for ($date = $startDate; $date->lte($endDate); $date->addDay()) {
             foreach ($shifts as $shift) {

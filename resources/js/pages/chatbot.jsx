@@ -1,4 +1,4 @@
-import { Head } from '@inertiajs/react';
+import { Head, Link } from '@inertiajs/react';
 import axios from 'axios';
 import { useState } from 'react';
 
@@ -42,7 +42,18 @@ const ChatBox = () => {
                 <link rel="preconnect" href="https://fonts.bunny.net" />
                 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
             </Head>
-            <h1 className="py-6 text-center text-3xl font-bold">AI Production Assistant</h1>
+            <div className="flex p-5">
+                <div className="w-14 flex-none ...">
+                    <Link href="/database" className="py-6 text-center text-xl font-bold hover:text-[#ff7b02]">
+                        Database
+                    </Link>
+                </div>
+                <div className="w-64 flex-auto ...">
+                    <h1 className="py-6 text-center text-3xl font-bold">AI Production Assistant</h1>
+                </div>
+                <div className="flex-none... w-32"></div>
+            </div>
+
             <div className="mx-auto mt-10 max-w-2xl rounded-lg border bg-white p-4 shadow">
                 <div className="h-96 space-y-2 overflow-y-auto border-b p-2">
                     {messages.map((msg, i) => (

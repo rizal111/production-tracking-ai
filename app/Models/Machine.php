@@ -9,7 +9,7 @@ class Machine extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['production_line_id', 'name', 'type', 'serial_number', 'status'];
+    protected $fillable = ['production_line_id', 'name', 'type', 'serial_number', 'status', 'capacity'];
 
     public function productionLine()
     {

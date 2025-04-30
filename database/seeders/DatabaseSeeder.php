@@ -25,7 +25,6 @@ class DatabaseSeeder extends Seeder
             MachinesSeeder::class,
             OperatorsSeeder::class,
             ProductionLogsSeeder::class,
-            AiInsightsSeeder::class,
         ]);
     }
 }

@@ -9,6 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+
     public function up(): void
     {
         Schema::create('machines', function (Blueprint $table) {
@@ -17,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('type');
             $table->string('serial_number')->nullable();
+            $table->unsignedInteger('capacity')->nullable();
             $table->enum('status', ['operational', 'downtime', 'maintenance'])->default('operational');
             $table->timestamps();
         });
